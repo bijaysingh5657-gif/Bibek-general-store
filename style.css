@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+body {
+    width: 100%;
+    height: 100vh;
+     background-image: linear-gradient(rgba(0,0,0,0.5)), url("web.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header h1 {
+    animation: colorChange 3s infinite;
+}
+
+@keyframes colorChange {
+    100% { color: rgb(255, 255, 255); }
+    50% { color: rgb(230, 229, 255); }
+    100% { color: rgb(251, 255, 0); }
+}
+
+
+.container{
+    background: linear-gradient(rgba(248, 161, 161, 0.737), rgba(95, 92, 92, 0.8));
+    width: 700px;
+    height: 650px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    overflow-y: scroll;
+    
+   
+}
+.container::-webkit-scrollbar{
+    display: none;
+}
+.container form{
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #000000;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+     padding-left: 10px;
+     
+}
+.container form input{
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+   
+   
+}
+.product-info h2{
+    font-size: 24px;
+    color: #cdff04;
+    
+
+}
+.product-info h3{
+    font-size: 18px;
+    color: #ffffff;
+}
+    
+
+
+.product{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+        padding: 10px;
+        border-bottom: 1px solid #000000;
+}
+   
+    
+    
+
+.product img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 50px;
+}
+.header{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+   box-shadow: 0 0 15px rgba(248, 40, 168, 0.7);
+     background: linear-gradient(rgba(60, 251, 216, 0.7), rgba(248, 40, 168, 0.7));     
+    margin-bottom: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+    
+}
+.header h1{
+    font-size: 50px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    
+}
+.header img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+   box-shadow: 0 0 15px rgba(248, 40, 168, 0.7);
+  
+}
